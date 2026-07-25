@@ -1,0 +1,58 @@
+{
+	"version": 2,
+	"processes": [
+		{
+			"name": "capsule_aind_analysis_job_dispatch_3",
+			"capsule": {
+				"id": "d8136da9-6ebd-4881-acac-d054ca35d3ff",
+				"name": "aind-analysis-job-dispatch",
+				"slug": "3709532",
+				"version": 3,
+				"app_panel": true
+			},
+			"resources": {
+				"cpus": 1,
+				"memory": 8
+			},
+			"inputs": [
+				{
+					"id": "7uzXj85DbsGEiIho",
+					"source_id": "data/input_files",
+					"type": "pipeline",
+					"name": "input_files",
+					"source_path": "input_files/",
+					"target_path": "input_files/",
+					"collect": true
+				}
+			]
+		},
+		{
+			"name": "capsule_aind_analysis_wrapper_template_4",
+			"capsule": {
+				"id": "cffff209-3aa7-43b1-80fc-96df26466e76",
+				"name": "aind-analysis-wrapper-template",
+				"slug": "9982875",
+				"commit": "a0615bf9c141502825b8d5c08943ee7eecb712f1",
+				"image_tag": "f71a8948d52f7b7cc5bf1649d2c797b1",
+				"app_panel": true
+			},
+			"resources": {
+				"cpus": 1,
+				"memory": 8
+			},
+			"inputs": [
+				{
+					"id": "dgLNdqbzCWZDFaKh",
+					"source_id": "capsule_aind_analysis_job_dispatch_3",
+					"type": "capsule",
+					"name": "aind-analysis-job-dispatch",
+					"target_path": "job_dict",
+					"flatten": true
+				}
+			],
+			"results": {
+				"id": "cffff209-3aa7-43b1-80fc-96df26466e76"
+			}
+		}
+	]
+}
