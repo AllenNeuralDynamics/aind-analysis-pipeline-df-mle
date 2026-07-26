@@ -1,10 +1,10 @@
 #!/usr/bin/env nextflow
-// hash:sha256:d5f0847189a7200e70e3184d8a459738ca9e2b9615706cb1f41c21f180a171cd
+// hash:sha256:d8b86cbbf018d1f55f7d79b716d340837765b53a0dade001c0a03e908d12315b
 
 // capsule - han_df_mle_aind-analysis-job-dispatch-v2
 process capsule_han_df_mle_aind_analysis_job_dispatch_3 {
 	tag 'capsule-0849744'
-	container "$REGISTRY_HOST/capsule/4717858b-f428-4929-943f-d0faa08afe66:88239447fd7917c7439a000a7869ad89"
+	container "$REGISTRY_HOST/capsule/4717858b-f428-4929-943f-d0faa08afe66:0a9adbb6cbdc929c253a4e7e53ba7f07"
 
 	cpus 1
 	memory '7.5 GB'
@@ -37,7 +37,7 @@ process capsule_han_df_mle_aind_analysis_job_dispatch_3 {
 	else
 		git -c credential.helper= clone "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-0849744.git" capsule-repo
 	fi
-	git -C capsule-repo checkout 7779b58e406f0d49557ac89c4c4afca7bb98e64e --quiet
+	git -C capsule-repo checkout 5b52b5d32ebb2c320b648f54bef37f5f96a6517c --quiet
 	mv capsule-repo/code capsule/code && ln -s \$PWD/capsule/code /code
 	rm -rf capsule-repo
 
@@ -53,7 +53,7 @@ process capsule_han_df_mle_aind_analysis_job_dispatch_3 {
 // capsule - han_df_mle_aind-analysis-wrapper
 process capsule_han_df_mle_aind_analysis_wrapper_4 {
 	tag 'capsule-8973113'
-	container "$REGISTRY_HOST/capsule/be26030f-2c75-4efc-a51a-3e33f03f34ad:892f7552b9c6cb0bd23b8dff5929961e"
+	container "$REGISTRY_HOST/capsule/be26030f-2c75-4efc-a51a-3e33f03f34ad:fbbc33d6f2c2f16a1150111a02536e09"
 
 	cpus 1
 	memory '7.5 GB'
@@ -87,7 +87,7 @@ process capsule_han_df_mle_aind_analysis_wrapper_4 {
 	else
 		git -c credential.helper= clone "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-8973113.git" capsule-repo
 	fi
-	git -C capsule-repo checkout 7414c46727ca5522f9b115c56915033ab8c0f10d --quiet
+	git -C capsule-repo checkout 2d9f04545b03de9ba0c2919ee4ffa36225c3a840 --quiet
 	mv capsule-repo/code capsule/code && ln -s \$PWD/capsule/code /code
 	rm -rf capsule-repo
 
