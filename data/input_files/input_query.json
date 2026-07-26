@@ -3,6 +3,6 @@
     "dynamic-foraging-task",
   "data_description.data_level": "derived",
   "session.session_start_time": {
-    "$gt": "2026-07-01",
+    "$gt": "2026-07-01"
   }
 }
