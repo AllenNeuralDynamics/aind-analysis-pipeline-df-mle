@@ -2,12 +2,13 @@
 	"version": 2,
 	"processes": [
 		{
-			"name": "capsule_aind_analysis_job_dispatch_3",
+			"name": "capsule_han_df_mle_aind_analysis_job_dispatch_3",
 			"capsule": {
-				"id": "d8136da9-6ebd-4881-acac-d054ca35d3ff",
-				"name": "aind-analysis-job-dispatch",
-				"slug": "3709532",
-				"version": 3,
+				"id": "4717858b-f428-4929-943f-d0faa08afe66",
+				"name": "han_df_mle_aind-analysis-job-dispatch-v2",
+				"slug": "0849744",
+				"commit": "7779b58e406f0d49557ac89c4c4afca7bb98e64e",
+				"image_tag": "88239447fd7917c7439a000a7869ad89",
 				"app_panel": true
 			},
 			"resources": {
@@ -27,13 +28,13 @@
 			]
 		},
 		{
-			"name": "capsule_aind_analysis_wrapper_template_4",
+			"name": "capsule_han_df_mle_aind_analysis_wrapper_4",
 			"capsule": {
-				"id": "cffff209-3aa7-43b1-80fc-96df26466e76",
-				"name": "aind-analysis-wrapper-template",
-				"slug": "9982875",
-				"commit": "a0615bf9c141502825b8d5c08943ee7eecb712f1",
-				"image_tag": "f71a8948d52f7b7cc5bf1649d2c797b1",
+				"id": "be26030f-2c75-4efc-a51a-3e33f03f34ad",
+				"name": "han_df_mle_aind-analysis-wrapper",
+				"slug": "8973113",
+				"commit": "7414c46727ca5522f9b115c56915033ab8c0f10d",
+				"image_tag": "892f7552b9c6cb0bd23b8dff5929961e",
 				"app_panel": true
 			},
 			"resources": {
@@ -43,15 +44,16 @@
 			"inputs": [
 				{
 					"id": "dgLNdqbzCWZDFaKh",
-					"source_id": "capsule_aind_analysis_job_dispatch_3",
+					"source_id": "capsule_han_df_mle_aind_analysis_job_dispatch_3",
 					"type": "capsule",
-					"name": "aind-analysis-job-dispatch",
+					"name": "han_df_mle_aind-analysis-job-dispatch",
 					"target_path": "job_dict",
 					"flatten": true
 				}
 			],
 			"results": {
-				"id": "cffff209-3aa7-43b1-80fc-96df26466e76"
+				"id": "be26030f-2c75-4efc-a51a-3e33f03f34ad",
+				"sequence_folders": true
 			}
 		}
 	]

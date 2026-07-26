@@ -1,9 +1,5 @@
 metadata_version: 1
-name: aind-analysis-pipeline-template
-description: Pipeline with job dispatch and analysis wrapper capsules that serves
-  as template for analysis
+name: aind-analysis-pipeline-df-mle-v2
+description: Pipeline for Dynamic Foraging model fitting
 authors:
-- name: Tom Chartrand
-- name: Arjun Sridhar
-- name: Arielle Leon
 - name: Han Hou

@@ -1,1 +1,10 @@
-{"subject.subject_id": "774659", "data_description.process_name": "processed"}
+{
+  "session.stimulus_epochs.software.name":
+    "dynamic-foraging-task",
+  "data_description.data_level": "derived",
+  "session.subject_id": "820688",
+  "session.session_start_time": {
+    "$gt": "2025-12-01",
+    "$lt": "2025-12-05"
+  }
+}

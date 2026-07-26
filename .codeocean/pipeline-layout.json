@@ -1,18 +1,18 @@
 {
 	"edges": [
 		{
-			"id": "xy-edge__data/input_files-capsule_aind_analysis_job_dispatch_3",
+			"id": "xy-edge__data/input_files-capsule_han_df_mle_aind_analysis_job_dispatch_3",
 			"source": "data/input_files",
-			"target": "capsule_aind_analysis_job_dispatch_3"
+			"target": "capsule_han_df_mle_aind_analysis_job_dispatch_3"
 		},
 		{
-			"id": "xy-edge__capsule_aind_analysis_job_dispatch_3-capsule_aind_analysis_wrapper_template_4",
-			"source": "capsule_aind_analysis_job_dispatch_3",
-			"target": "capsule_aind_analysis_wrapper_template_4"
+			"id": "xy-edge__capsule_han_df_mle_aind_analysis_job_dispatch_3-capsule_han_df_mle_aind_analysis_wrapper_4",
+			"source": "capsule_han_df_mle_aind_analysis_job_dispatch_3",
+			"target": "capsule_han_df_mle_aind_analysis_wrapper_4"
 		},
 		{
-			"id": "xy-edge__capsule_aind_analysis_wrapper_template_4-results",
-			"source": "capsule_aind_analysis_wrapper_template_4",
+			"id": "xy-edge__capsule_han_df_mle_aind_analysis_wrapper_4-results",
+			"source": "capsule_han_df_mle_aind_analysis_wrapper_4",
 			"target": "results"
 		}
 	],
@@ -32,32 +32,33 @@
 				"x": 885,
 				"y": -195
 			},
+			"selected": false,
 			"type": "pipeline"
 		},
 		{
 			"data": {
-				"capsule_id": "d8136da9-6ebd-4881-acac-d054ca35d3ff"
+				"capsule_id": "4717858b-f428-4929-943f-d0faa08afe66"
 			},
-			"id": "capsule_aind_analysis_job_dispatch_3",
+			"id": "capsule_han_df_mle_aind_analysis_job_dispatch_3",
 			"position": {
-				"x": 856.8070359173264,
-				"y": 41.05550168215582
+				"x": 846.14036925066,
+				"y": 133.0555016821558
 			},
-			"selected": true,
+			"selected": false,
 			"type": "capsule"
 		},
 		{
 			"data": {
-				"capsule_id": "cffff209-3aa7-43b1-80fc-96df26466e76"
+				"capsule_id": "be26030f-2c75-4efc-a51a-3e33f03f34ad"
 			},
-			"id": "capsule_aind_analysis_wrapper_template_4",
+			"id": "capsule_han_df_mle_aind_analysis_wrapper_4",
 			"position": {
-				"x": 863.3422007918914,
-				"y": 325.22886119243697
+				"x": 850.0088674585583,
+				"y": 425.22886119243697
 			},
 			"selected": true,
 			"type": "capsule"
 		}
 	],
-	"timestamp": 1772751246206
+	"timestamp": 1785030195289
 }
