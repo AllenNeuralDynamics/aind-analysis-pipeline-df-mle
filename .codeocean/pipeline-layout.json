@@ -1,13 +1,13 @@
 {
 	"edges": [
 		{
-			"id": "xy-edge__data/input_files-capsule_han_df_mle_aind_analysis_job_dispatch_3",
+			"id": "xy-edge__data/input_files-capsule_aind_analysis_job_dispatch_3",
 			"source": "data/input_files",
-			"target": "capsule_han_df_mle_aind_analysis_job_dispatch_3"
+			"target": "capsule_aind_analysis_job_dispatch_3"
 		},
 		{
-			"id": "xy-edge__capsule_han_df_mle_aind_analysis_job_dispatch_3-capsule_han_df_mle_aind_analysis_wrapper_4",
-			"source": "capsule_han_df_mle_aind_analysis_job_dispatch_3",
+			"id": "xy-edge__capsule_aind_analysis_job_dispatch_3-capsule_han_df_mle_aind_analysis_wrapper_4",
+			"source": "capsule_aind_analysis_job_dispatch_3",
 			"target": "capsule_han_df_mle_aind_analysis_wrapper_4"
 		},
 		{
@@ -20,32 +20,20 @@
 		{
 			"id": "results",
 			"position": {
-				"x": 893.6666666666667,
-				"y": 786.6666666666666
+				"x": 897.8847584226254,
+				"y": 645.3605928420515
 			},
-			"selected": false,
+			"selected": true,
 			"type": "results"
 		},
 		{
 			"id": "data/input_files",
 			"position": {
 				"x": 885,
-				"y": -195
+				"y": -75.16472920920833
 			},
 			"selected": false,
 			"type": "pipeline"
-		},
-		{
-			"data": {
-				"capsule_id": "4717858b-f428-4929-943f-d0faa08afe66"
-			},
-			"id": "capsule_han_df_mle_aind_analysis_job_dispatch_3",
-			"position": {
-				"x": 846.14036925066,
-				"y": 133.0555016821558
-			},
-			"selected": false,
-			"type": "capsule"
 		},
 		{
 			"data": {
@@ -53,12 +41,24 @@
 			},
 			"id": "capsule_han_df_mle_aind_analysis_wrapper_4",
 			"position": {
-				"x": 850.0088674585583,
-				"y": 425.22886119243697
+				"x": 847.90649428679,
+				"y": 378.97665141353485
+			},
+			"selected": false,
+			"type": "capsule"
+		},
+		{
+			"data": {
+				"capsule_id": "d8136da9-6ebd-4881-acac-d054ca35d3ff"
+			},
+			"id": "capsule_aind_analysis_job_dispatch_3",
+			"position": {
+				"x": 847.5020803900078,
+				"y": 118.07667914933074
 			},
 			"selected": true,
 			"type": "capsule"
 		}
 	],
-	"timestamp": 1785030195289
+	"timestamp": 1792010158169
 }
