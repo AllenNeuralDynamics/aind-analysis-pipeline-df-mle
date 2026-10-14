@@ -1,5 +1,5 @@
 #!/usr/bin/env nextflow
-// hash:sha256:15348ad806cae8ed9bae3a8986fcecda387aac5530189c22fb1afeeffefb58d9
+// hash:sha256:90053caaf9f997b612194ee10693efa23a8e2f155029486e7dc7dad3cfb1ecf5
 
 // capsule - aind-analysis-job-dispatch
 process capsule_aind_analysis_job_dispatch_3 {
@@ -51,8 +51,8 @@ process capsule_aind_analysis_job_dispatch_3 {
 
 // capsule - han_df_mle_aind-analysis-wrapper-v2
 process capsule_han_df_mle_aind_analysis_wrapper_4 {
-	tag 'capsule-8973113'
-	container "$REGISTRY_HOST/capsule/be26030f-2c75-4efc-a51a-3e33f03f34ad:fbbc33d6f2c2f16a1150111a02536e09"
+	tag 'capsule-4788275'
+	container "$REGISTRY_HOST/published/d4c1024c-a047-49ff-b92e-39e86eeaf861:v3"
 
 	cpus 1
 	memory '7.5 GB'
@@ -71,7 +71,7 @@ process capsule_han_df_mle_aind_analysis_wrapper_4 {
 	#!/usr/bin/env bash
 	set -e
 
-	export CO_CAPSULE_ID=be26030f-2c75-4efc-a51a-3e33f03f34ad
+	export CO_CAPSULE_ID=d4c1024c-a047-49ff-b92e-39e86eeaf861
 	export CO_CPUS=1
 	export CO_MEMORY=8053063680
 
@@ -82,11 +82,10 @@ process capsule_han_df_mle_aind_analysis_wrapper_4 {
 
 	echo "[${task.tag}] cloning git repo..."
 	if [[ "\$(printf '%s\n' "2.20.0" "\$(git version | awk '{print \$3}')" | sort -V | head -n1)" = "2.20.0" ]]; then
-		git -c credential.helper= clone --filter=tree:0 "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-8973113.git" capsule-repo
+		git -c credential.helper= clone --filter=tree:0 --branch v3.0 "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-4788275.git" capsule-repo
 	else
-		git -c credential.helper= clone "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-8973113.git" capsule-repo
+		git -c credential.helper= clone --branch v3.0 "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-4788275.git" capsule-repo
 	fi
-	git -C capsule-repo checkout 2d9f04545b03de9ba0c2919ee4ffa36225c3a840 --quiet
 	mv capsule-repo/code capsule/code && ln -s \$PWD/capsule/code /code
 	rm -rf capsule-repo
 
