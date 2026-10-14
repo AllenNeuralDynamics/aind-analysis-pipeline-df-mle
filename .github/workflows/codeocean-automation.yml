@@ -1,0 +1,43 @@
+name: Code Ocean Automation
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 12 * * *'
+
+permissions:
+  contents: read
+
+jobs:
+  submit-computation:
+    runs-on: ubuntu-latest
+    env:
+      CODEOCEAN_DOMAIN: codeocean.allenneuraldynamics.org
+      CODEOCEAN_API_TOKEN: ${{ secrets.CODEOCEAN_API_TOKEN }}
+      CO_PIPELINE_ID: ${{ vars.CO_PIPELINE_ID }}
+      DOCDB_QUERY: /data/input_files/input_query.json
+    steps:
+      - name: Submit computation
+        run: |
+          cat > payload.json <<EOF
+          {
+            "pipeline_id": "${CO_PIPELINE_ID}",
+            "processes": [
+              {
+                "name": "capsule_aind_analysis_job_dispatch_3",
+                "named_parameters": [
+                  {
+                    "param_name": "docdb_query",
+                    "value": "${DOCDB_QUERY}"
+                  }
+                ]
+              }
+            ]
+          }
+          EOF
+
+          curl --fail-with-body --show-error \
+            --request POST "https://${CODEOCEAN_DOMAIN}/api/v1/computations" \
+            --header "Content-Type: application/json" \
+            --user "${CODEOCEAN_API_TOKEN}:" \
+            --data @payload.json
