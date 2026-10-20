@@ -5,6 +5,7 @@
 	"role": {
 		"role_arn": "arn:aws:iam::467914378000:role/aind-codeocean-user"
 	},
+	"spot": true,
 	"nextflow_error_strategy": {
 		"error_strategy": "ignore"
 	},

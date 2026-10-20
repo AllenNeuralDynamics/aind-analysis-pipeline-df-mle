@@ -6,13 +6,13 @@
 			"target": "capsule_aind_analysis_job_dispatch_3"
 		},
 		{
-			"id": "xy-edge__capsule_aind_analysis_job_dispatch_3-capsule_han_df_mle_aind_analysis_wrapper_4",
+			"id": "xy-edge__capsule_aind_analysis_job_dispatch_3-capsule_aind_analysis_wrapper_df_model_fitting_4",
 			"source": "capsule_aind_analysis_job_dispatch_3",
-			"target": "capsule_han_df_mle_aind_analysis_wrapper_4"
+			"target": "capsule_aind_analysis_wrapper_df_model_fitting_4"
 		},
 		{
-			"id": "xy-edge__capsule_han_df_mle_aind_analysis_wrapper_4-results",
-			"source": "capsule_han_df_mle_aind_analysis_wrapper_4",
+			"id": "xy-edge__capsule_aind_analysis_wrapper_df_model_fitting_4-results",
+			"source": "capsule_aind_analysis_wrapper_df_model_fitting_4",
 			"target": "results"
 		}
 	],
@@ -37,18 +37,6 @@
 		},
 		{
 			"data": {
-				"capsule_id": "d4c1024c-a047-49ff-b92e-39e86eeaf861"
-			},
-			"id": "capsule_han_df_mle_aind_analysis_wrapper_4",
-			"position": {
-				"x": 847.90649428679,
-				"y": 378.97665141353485
-			},
-			"selected": true,
-			"type": "capsule"
-		},
-		{
-			"data": {
 				"capsule_id": "d8136da9-6ebd-4881-acac-d054ca35d3ff"
 			},
 			"id": "capsule_aind_analysis_job_dispatch_3",
@@ -58,12 +46,19 @@
 			},
 			"selected": false,
 			"type": "capsule"
+		},
+		{
+			"data": {
+				"capsule_id": "d4c1024c-a047-49ff-b92e-39e86eeaf861"
+			},
+			"id": "capsule_aind_analysis_wrapper_df_model_fitting_4",
+			"position": {
+				"x": 847.90649428679,
+				"y": 378.97665141353485
+			},
+			"selected": true,
+			"type": "capsule"
 		}
 	],
-	"timestamp": 1792010780163,
-	"viewport": {
-		"x": 0,
-		"y": 0,
-		"zoom": 0.75
-	}
+	"timestamp": 1792453554297
 }

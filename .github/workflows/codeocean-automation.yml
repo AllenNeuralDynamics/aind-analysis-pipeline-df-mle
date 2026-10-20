@@ -15,7 +15,6 @@ jobs:
       CODEOCEAN_DOMAIN: codeocean.allenneuraldynamics.org
       CODEOCEAN_API_TOKEN: ${{ secrets.CODEOCEAN_API_TOKEN }}
       CO_PIPELINE_ID: ${{ vars.CO_PIPELINE_ID }}
-      DOCDB_QUERY: /data/input_files/input_query.json
     steps:
       - name: Submit computation
         run: |
@@ -28,7 +27,36 @@ jobs:
                 "named_parameters": [
                   {
                     "param_name": "docdb_query",
-                    "value": "${DOCDB_QUERY}"
+                    "value": "/data/input_files/input_query.json"
+                  },
+                  {
+                    "param_name": "file_extension",
+                    "value": "nwb.zarr"
+                  },
+                  {
+                    "param_name": "filter_latest",
+                    "value": "data_description.creation_time"
+                  },
+                  {
+                    "param_name": "filter_by",
+                    "value": "acquisition.acquisition_start_time"
+                  },
+                  {
+                    "param_name": "docdb_version",
+                    "value": "v2"
+                  },
+                  {
+                    "param_name": "max_number_of_tasks_dispatched",
+                    "value": "10"
+                  }
+                ]
+              },
+              {
+                "name": "capsule_aind_analysis_wrapper_df_model_fitting_4",
+                "named_parameters": [
+                  {
+                    "param_name": "dry_run",
+                    "value": "0"
                   }
                 ]
               }

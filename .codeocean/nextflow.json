@@ -27,12 +27,12 @@
 			]
 		},
 		{
-			"name": "capsule_han_df_mle_aind_analysis_wrapper_4",
+			"name": "capsule_aind_analysis_wrapper_df_model_fitting_4",
 			"capsule": {
 				"id": "d4c1024c-a047-49ff-b92e-39e86eeaf861",
-				"name": "han_df_mle_aind-analysis-wrapper-v2",
+				"name": "aind-analysis-wrapper-df-model-fitting",
 				"slug": "4788275",
-				"version": 3,
+				"version": 4,
 				"app_panel": true
 			},
 			"resources": {
@@ -50,7 +50,7 @@
 				}
 			],
 			"results": {
-				"id": "be26030f-2c75-4efc-a51a-3e33f03f34ad",
+				"id": "d4c1024c-a047-49ff-b92e-39e86eeaf861",
 				"sequence_folders": true
 			}
 		}

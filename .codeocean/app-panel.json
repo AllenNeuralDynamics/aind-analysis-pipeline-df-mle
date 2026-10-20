@@ -1,7 +1,7 @@
 {
 	"version": 1,
 	"processes": [
-		"capsule_han_df_mle_aind_analysis_wrapper_4",
-		"capsule_aind_analysis_job_dispatch_3"
+		"capsule_aind_analysis_job_dispatch_3",
+		"capsule_aind_analysis_wrapper_df_model_fitting_4"
 	]
 }
