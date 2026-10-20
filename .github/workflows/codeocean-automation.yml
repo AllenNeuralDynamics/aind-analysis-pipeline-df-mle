@@ -47,7 +47,7 @@ jobs:
                   },
                   {
                     "param_name": "max_number_of_tasks_dispatched",
-                    "value": "1000"
+                    "value": "2000"
                   }
                 ]
               },
